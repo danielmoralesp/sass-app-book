@@ -8,43 +8,37 @@ end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.1.4'
-gem 'i18n', '~> 0.6'
-# Use postgresql as the database for Active Record
-gem 'pg', '~> 0.18'
-# Use Puma as the app server
-gem 'puma', '~> 3.7'
-# Use SCSS for stylesheets
-gem 'sass-rails', '~> 5.0'
-# Use Uglifier as compressor for JavaScript assets
-gem 'uglifier', '>= 1.3.0'
-# See https://github.com/rails/execjs#readme for more supported runtimes
-# gem 'therubyracer', platforms: :ruby
 
-# Use CoffeeScript for .coffee assets and views
+gem 'i18n', '~> 0.6'
+gem 'pg', '~> 0.18'
+gem 'puma', '~> 3.0'
+gem 'sass-rails', '~> 5.0'
+gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
+
 gem 'jquery-rails'
-# Turbolinks makes navigating your web application faster. Read more: https://github.com/turbolinks/turbolinks
 gem 'turbolinks', '~> 5'
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-# Use Redis adapter to run Action Cable in production
-# gem 'redis', '~> 3.0'
-# Use ActiveModel has_secure_password
-# gem 'bcrypt', '~> 3.1.7'
 
 gem 'aasm'
+
 gem 'lodash-rails'
 gem 'local_time'
 gem 'redis', '~> 3.0'
+# gem 'bcrypt', '~> 3.1.7' # Use ActiveModel has_secure_password
+
 gem 'devise'
 gem 'devise_invitable'
 gem 'rolify'
 gem 'cancancan', '~> 1.15'
+
 gem 'paper_trail'
 gem 'ranked-model'
+
 gem 'bootstrap-sass', '~> 3.3.6'
 gem 'friendly_id', '~> 5.1.0'
-gem "slim-rails"
+
+gem 'slim-rails'
 gem 'sidekiq'
 gem 'sinatra', github: 'sinatra/sinatra', require: nil
 gem 'sidekiq-statistic'
@@ -53,25 +47,28 @@ gem 'country_select'
 gem 'kaminari'
 gem 'paperclip'
 gem 'aws-sdk', '~> 2.3'
+
 gem 'money-rails'
+
 gem 'ransack'
+
 gem 'slack-notifier'
+
 gem 'premailer-rails'
 gem 'griddler'
-gem 'griddler-mailgun'
+gem 'griddler-sendgrid'
+
 gem 'rollbar'
 
-# Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
-
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails', '~> 3.5'
+  gem 'byebug', platform: :mri
+  gem 'rspec-rails', '~> 3.6'
+  gem 'rails-controller-testing'
+  gem 'faker'
 end
 
 gem 'simplecov', :require => false, :group => :test
-gem "factory_bot_rails", "~> 4.0"
+gem 'factory_girl_rails', '~> 4.0'
 
 group :development do
   gem "letter_opener"

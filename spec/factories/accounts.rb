@@ -1,4 +1,4 @@
-FactoryBot.define do
+FactoryGirl.define do
   factory :account do
     name "MyString"
     addr1 "MyString"
