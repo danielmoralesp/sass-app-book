@@ -1,1 +1,62 @@
-header
+<header class="main-header">
+   <a class="logo" href="/">
+   Standup App
+   </a><!--Header Navbar: style can be found in header.less-->
+   <nav class="navbar navbar-static-top" role="navigation">
+      <div class="pull-left">
+         <a class="logo" href="/t">
+         Teams
+         </a><a class="logo" href="/s">
+         Standups
+         </a><a class="logo standup" href="">
+         Submit a Standup
+         </a>
+      </div>
+      <!--Navbar Right Menu-->
+      <div class="navbar-custom-menu">
+         <ul class="nav navbar-nav">
+            <!--Notifications: style can be found in dropdown.less-->
+            <li class="dropdown notifications-menu">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+               <i class="fa fa-bell-o">
+               </i><span class="label label-warning" style="display:none">
+               NEW
+               </span></a>
+               <ul class="dropdown-menu" id="notification-container">
+
+               </ul>
+            </li>
+            <!--User Account: style can be found in dropdown.less-->
+            <li class="dropdown user user-menu">
+               <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+               <img alt="" alt="" class="user-image" src=" " />
+               <span class="hidden-xs">
+               </span></a>
+               <ul class="dropdown-menu">
+                  <li class="header"></li>
+                  <li class="divider"></li>
+                  <li>
+                     <a href="/user/me">
+                     Profile
+                     </a>
+                  </li>
+
+                  <li>
+                     <a href="/account/users">
+                     Settings
+                     </a>
+                  </li>
+                  <li>
+
+                  </li>
+
+                  <li class="divider"></li>
+                  <li>
+
+                  </li>
+               </ul>
+            </li>
+         </ul>
+      </div>
+   </nav>
+</header>
