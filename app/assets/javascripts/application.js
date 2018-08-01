@@ -17,4 +17,5 @@
 //= require lodash
 //= require local-time
 //= require bootstrap-sprockets
+//= require jquery.slimscroll.min.js
 //= require_tree .
