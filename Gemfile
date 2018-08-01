@@ -27,6 +27,54 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
+# PARTICULAR OF THE BOOK
+gem 'rails-i18n', '~> 5.1'
+gem 'jquery-rails'
+
+# STATE MACHINE
+gem 'aasm'
+
+# FRONTEND
+gem 'lodash-rails'
+gem 'local_time'
+gem 'redis', '~> 4.0'
+gem 'bootstrap-sass', '~> 3.3.7'
+gem 'gravatar_image_tag'
+gem 'country_select'
+gem 'kaminari'
+gem "paperclip"
+
+# AUTHENTICATION
+gem 'devise'
+gem 'devise_invitable', '~> 1.7.0'
+gem "rolify"
+gem 'cancancan', '~> 2.0'
+
+# MODELS
+gem 'paper_trail'
+gem 'ranked-model'
+
+# WORKERS
+gem 'sidekiq'
+gem 'sinatra', github: 'sinatra/sinatra', require: nil
+gem 'sidekiq-statistic'
+
+# EMAILING
+gem 'premailer-rails'
+gem 'griddler'
+gem 'griddler-mailgun'
+
+
+# OTHERS
+gem 'friendly_id', '~> 5.2.0'
+gem 'aws-sdk', '~> 3'
+gem 'money-rails'
+gem 'ransack'
+gem "slack-notifier"
+gem 'rollbar'
+
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -39,7 +87,11 @@ gem 'bootsnap', '>= 1.1.0', require: false
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails', '~> 3.7'
 end
+
+gem 'simplecov', require: false, group: :test
+gem 'factory_bot_rails'
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
@@ -48,6 +100,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem "letter_opener"
 end
 
 group :test do
@@ -60,3 +113,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem 'rack-cors', require: 'rack/cors'
