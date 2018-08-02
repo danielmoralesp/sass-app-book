@@ -806,6 +806,7 @@ GEM
       mime-types
       mimemagic (~> 0.3.0)
       terrapin (~> 0.6.0)
+    pg (1.0.0)
     polyamorous (1.3.3)
       activerecord (>= 3.0)
     premailer (1.11.1)
@@ -993,6 +994,7 @@ DEPENDENCIES
   money-rails
   paper_trail
   paperclip
+  pg
   premailer-rails
   puma (~> 3.11)
   rack-cors
