@@ -6,5 +6,10 @@ class User < ApplicationRecord
   devise :invitable, :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable
 
-  belongs_to :account, optional: true
+  # belongs_to :account, optional: true
+  belongs_to :account
+
+  # def account
+  #   super || Account.new
+  # end
 end
